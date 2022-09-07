@@ -1,10 +1,18 @@
 @use "/Abstracts" as *;
 
 body {
+	background-color: var(--clr-surface-300);
 	color: var(--clr-surface-900);
-
-	background-color: var(--clr-surface-100);
 
 	font-family: "Fredoka", spotify-circular, spotify-circular-cyrillic, spotify-circular-arabic, spotify-circular-hebrew,
 		"Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic Pro", Meiryo, "MS Gothic", sans-serif;
+}
+
+.root {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	grid-auto-rows: 10rem;
+
+	width: 100%;
+	height: 100%;
 }
